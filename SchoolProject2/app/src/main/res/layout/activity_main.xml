@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/unifrakturmaguntia"
-        android:text="Generator"
+        android:text="Generators"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="42sp"
