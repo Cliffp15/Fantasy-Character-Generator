@@ -37,5 +37,22 @@ class MainActivity : AppCompatActivity()
         })
 
 
+        val settingsBtn = findViewById<Button>(R.id.button7)
+        settingsBtn.setOnClickListener(View.OnClickListener
+        {
+            val intent = Intent(this, SettingsScreen::class.java)
+            startActivity(intent)
+        })
+
+        val contactBtn = findViewById<Button>(R.id.button9)
+        contactBtn.setOnClickListener(View.OnClickListener
+        {
+            val intent = Intent(this, CreditsScreen::class.java)
+            startActivity(intent)
+        })
+
+
+
+
     }
 }

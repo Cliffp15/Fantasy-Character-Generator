@@ -10,6 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SchoolProject2">
         <activity
+            android:name=".SettingsNav"
+            android:exported="false"
+            android:label="@string/title_activity_settings_nav"
+            android:theme="@style/Theme.SchoolProject2.NoActionBar" />
+        <activity
+            android:name=".CreditsScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsScreen"
+            android:exported="false" />
+        <activity
+            android:name=".BackgroundStoryScreen"
+            android:exported="false" />
+        <activity
             android:name=".SavedCharactersScreen"
             android:exported="false" />
         <activity
