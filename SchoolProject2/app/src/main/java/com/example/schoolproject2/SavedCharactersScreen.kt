@@ -3,47 +3,60 @@ package com.example.schoolproject2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.ActionBarDrawerToggle
+import kotlinx.android.synthetic.main.activity_created_characters_screen.*
+import kotlinx.android.synthetic.main.activity_created_characters_screen.navView
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_saved_characters_screen.*
 
 class SavedCharactersScreen : AppCompatActivity() {
+
+    lateinit var toggle: ActionBarDrawerToggle
+
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_saved_characters_screen)
 
 
+        toggle = ActionBarDrawerToggle(this, savedCharDrawerLayout, R.string.open, R.string.close)
+        savedCharDrawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
 
-        val settingsBtn = findViewById<Button>(R.id.button7)
-        settingsBtn.setOnClickListener(
-            View.OnClickListener
-        {
-            val intent = Intent(this, SettingsScreen::class.java)
-            startActivity(intent)
-        })
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val contactBtn = findViewById<Button>(R.id.button9)
-        contactBtn.setOnClickListener(
-            View.OnClickListener
-        {
-            val intent = Intent(this, CreditsScreen::class.java)
-            startActivity(intent)
-        })
+        navView.setNavigationItemSelectedListener {
+            when(it.itemId) {
+                R.id.miItem1 -> {
 
+                    val intent = Intent(this, SettingsScreen::class.java)
+                    startActivity(intent)
+                }
+                R.id.miItem2 -> {
 
-        val homeBtn = findViewById<Button>(R.id.button6)
-        homeBtn.setOnClickListener(
-            View.OnClickListener
-        {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        })
+                    val intent = Intent(this, CreditsScreen::class.java)
+                    startActivity(intent)
+                }
+                R.id.miItem3 -> {
 
-
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+            }
+            true
+        }
 
     }
 
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(toggle.onOptionsItemSelected(item)){
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 
 }
