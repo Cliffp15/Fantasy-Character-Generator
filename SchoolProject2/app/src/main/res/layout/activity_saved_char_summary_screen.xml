@@ -2,7 +2,7 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/savedCharDrawerLayout"
+    android:id="@+id/savedCharSummaryDrawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/unifrakturmaguntia"
-            android:text="Saved Characters"
+            android:text="Saved Character's Name"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="55sp"
@@ -29,90 +29,61 @@
             app:layout_constraintVertical_bias="0.073" />
 
         <Button
-        android:id="@+id/button3"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="221dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="31dp"
-        android:backgroundTint="#0B2F4C"
-        android:fontFamily="@font/uncial_antiqua"
-        android:shadowDx="0"
-        android:text="Delete Character"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.931" />
-
-        <Button
-            android:id="@+id/button6"
+            android:id="@+id/button3"
             style="@style/Widget.Material3.Button"
-            android:layout_width="221dp"
-            android:layout_height="54dp"
+            android:layout_width="188dp"
+            android:layout_height="47dp"
             android:layout_marginTop="31dp"
             android:backgroundTint="#0B2F4C"
             android:fontFamily="@font/uncial_antiqua"
             android:shadowDx="0"
-            android:text="Saved Character"
+            android:text="View PDF"
             android:textAlignment="center"
             android:textColor="@android:color/holo_orange_light"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.194"
+            app:layout_constraintHorizontal_bias="0.929"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.233" />
+            app:layout_constraintVertical_bias="0.975" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="31dp"
+            android:backgroundTint="#0B2F4C"
+            android:fontFamily="@font/uncial_antiqua"
+            android:shadowDx="0"
+            android:text="Print PDF"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.975" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="411dp"
+            android:layout_height="409dp"
             android:fontFamily="@font/uncial_antiqua"
-            android:text="Saved Character"
+            android:text="Saved Character's Summary, Name, Age, Race, Etc"
             android:textColor="@color/white"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.638" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/uncial_antiqua"
-            android:text="Saved Character"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.15"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/uncial_antiqua"
-            android:text="Saved Character"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.15"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.519" />
+            app:layout_constraintVertical_bias="0.549" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

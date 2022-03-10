@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_saved_char_summary_screen.xml" value="0.19947916666666668" />
+        <entry key="..\:/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_saved_characters_screen.xml" value="0.19947916666666668" />
+        <entry key="..\:/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_settings_screen.xml" value="0.25" />
+        <entry key="..\:/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/menu/activity_main_drawer.xml" value="0.36102564102564105" />
+        <entry key="..\:/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/menu/nav_drawer_menu.xml" value="0.32407407407407407" />
+        <entry key="..\:/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/menu/settings_nav.xml" value="0.32407407407407407" />
         <entry key="..\:/Users/Alex/AndroidStudioProjects/SchoolProject2/app/src/main/res/layout/activity_create_character.xml" value="0.13576494427558258" />
         <entry key="..\:/Users/Alex/AndroidStudioProjects/SchoolProject2/app/src/main/res/layout/activity_create_character_btn.xml" value="0.20153985507246377" />
         <entry key="..\:/Users/Alex/AndroidStudioProjects/SchoolProject2/app/src/main/res/layout/activity_created_characters_screen.xml" value="0.23958333333333334" />
@@ -13,16 +19,13 @@
         <entry key="..\:/Users/Alex/AndroidStudioProjects/SchoolProject2/app/src/main/res/layout/activity_saved_characters_btn.xml" value="0.2871376811594203" />
         <entry key="..\:/Users/Alex/AndroidStudioProjects/SchoolProject2/app/src/main/res/layout/activity_saved_characters_screen.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_background_story_screen.xml" value="0.33" />
-        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_created_characters_screen.xml" value="0.18" />
+        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_created_characters_screen.xml" value="0.25" />
         <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_credits_screen.xml" value="0.22" />
-        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_generate_random_screen.xml" value="0.1" />
-        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_saved_characters_screen.xml" value="0.25" />
+        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_generate_random_screen.xml" value="0.18" />
+        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_saved_characters_screen.xml" value="0.2" />
         <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/activity_settings_screen.xml" value="0.25" />
-        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/app_bar_settings_nav.xml" value="0.30364583333333334" />
         <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/content_settings_nav.xml" value="0.25" />
-        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/layout/nav_header.xml" value="0.2341485507246377" />
-        <entry key="..\:/Users/Alex/Documents/FullSail_ComputerScience/2202-2204-Mellow-Mules-CS-/SchoolProject2/app/src/main/res/menu/nav_drawer_menu.xml" value="0.25677083333333334" />
       </map>
     </option>
   </component>
