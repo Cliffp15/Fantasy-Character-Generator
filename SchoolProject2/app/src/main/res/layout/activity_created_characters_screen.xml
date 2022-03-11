@@ -12,22 +12,112 @@
         android:layout_height="match_parent"
         android:background="#450606">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName23"
-            android:layout_width="159dp"
-            android:layout_height="27dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.408"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.262"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/editTextTextPersonName19"
+        android:layout_width="159dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <EditText
+    <EditText
+        android:id="@+id/editTextTextPersonName20"
+        android:layout_width="159dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName21"
+        android:layout_width="159dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName22"
+        android:layout_width="159dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName23"
+        android:layout_width="159dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName18"
+        android:layout_width="159dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName17"
+        android:layout_width="159dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
         android:id="@+id/editTextTextPersonName16"
         android:layout_width="159dp"
         android:layout_height="27dp"
@@ -243,22 +333,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.835" />
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="75dp"
-            android:layout_height="29dp"
-            android:fontFamily="@font/uncial_antiqua"
-            android:text="Age :"
-            android:textAlignment="textStart"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.044"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.259" />
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="75dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/uncial_antiqua"
+        android:text="Age :"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
