@@ -17,12 +17,15 @@ import android.provider.DocumentsContract
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.annotation.RequiresApi
+import kotlinx.android.synthetic.main.activity_saved_char_summary_screen.*
 import org.w3c.dom.Document
+import java.io.FileNotFoundException
 import java.io.FileOutputStream
 import java.io.IOException
-
-
+import kotlin.random.Random
+import kotlin.random.nextInt
 
 
 class SavedCharSummaryScreen : AppCompatActivity() {
@@ -33,59 +36,57 @@ class SavedCharSummaryScreen : AppCompatActivity() {
         setContentView(R.layout.activity_saved_char_summary_screen)
 
 
-    var printPDFBtn = findViewById<Button>(R.id.button6)
-    printPDFBtn.setOnClickListener{
-        var builder = android.app.AlertDialog.Builder(this)
-        builder.setTitle("Print")
-        builder.setMessage("Where would you like to print to?")
-        builder.setNeutralButton("Back") { dialoginterface, which -> }
+        var printPDFBtn = findViewById<Button>(R.id.button6)
+        printPDFBtn.setOnClickListener {
+            var builder = android.app.AlertDialog.Builder(this)
+            builder.setTitle("Print")
+            builder.setMessage("Where would you like to print to?")
+            builder.setNeutralButton("Back") { dialoginterface, which -> }
 
-        var printPDFDialog = builder.create()
-        printPDFDialog.setCancelable(false)
-        printPDFDialog.show()
+            var printPDFDialog = builder.create()
+            printPDFDialog.setCancelable(false)
+            printPDFDialog.show()
+        }
+
+
+        var viewPDFBtn = findViewById<Button>(R.id.button3)
+        viewPDFBtn.setOnClickListener {
+            var builder = android.app.AlertDialog.Builder(this)
+            builder.setTitle("View")
+            builder.setMessage("PDF goes here")
+            builder.setNeutralButton("Back") { dialoginterface, which -> }
+
+            var viewPDFDialog = builder.create()
+            viewPDFDialog.setCancelable(false)
+            viewPDFDialog.show()
+
+            val contentPDF = textView6.text.toString()
+
+            val fileName = Random.nextInt(0..200)
+
+            val fileOutputStream: FileOutputStream
+
+            try {
+                fileOutputStream = openFileOutput(fileName.toString(), Context.MODE_PRIVATE)
+                fileOutputStream.write(textView6.text.toString().toByteArray())
+              
+            } catch (e: FileNotFoundException) {
+                e.printStackTrace()
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            showToast("Saved To File!")
+
+        }
     }
 
-
-    var viewPDFBtn = findViewById<Button>(R.id.button3)
-    viewPDFBtn.setOnClickListener{
-        var builder = android.app.AlertDialog.Builder(this)
-        builder.setTitle("View")
-        builder.setMessage("PDF goes here")
-        builder.setNeutralButton("Back") { dialoginterface, which -> }
-
-        var viewPDFDialog = builder.create()
-        viewPDFDialog.setCancelable(false)
-        viewPDFDialog.show()
+    private fun Context.showToast(text:CharSequence, duration: Int = Toast.LENGTH_SHORT){
+        Toast.makeText(this,text,duration).show() //Added for file saving
+    }
 
     }
 
-
-// create a new document
-    PdfDocument document = new PdfDocument();
-
-// create a page description
-    PdfDocument.PageInfo pageInfo = new PdfDocument.PageInfo.Builder(100, 100, 1).create();
-
-// start a page
-    Page page = document.startPage(pageInfo);
-
-// draw something on the page
-    View content = getContentView();
-    content.draw(page.getCanvas());
-
-// finish the page
-    document.finishPage(page);
-
-// add more pages
-
-// write the document content
-    document.writeTo(getOutputStream());
-
-// close the document
-    document.close();
-
-
-}
 
 
 
