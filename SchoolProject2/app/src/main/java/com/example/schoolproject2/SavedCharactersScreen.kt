@@ -22,6 +22,17 @@ class SavedCharactersScreen : AppCompatActivity() {
         setContentView(R.layout.activity_saved_characters_screen)
 
 
+
+        val generateRandomBtn = findViewById<Button>(R.id.button6)
+        generateRandomBtn.setOnClickListener(View.OnClickListener
+        {
+            val intent = Intent(this, SavedCharSummaryScreen::class.java)
+            startActivity(intent)
+        })
+
+
+
+
         toggle = ActionBarDrawerToggle(this, savedCharDrawerLayout, R.string.open, R.string.close)
         savedCharDrawerLayout.addDrawerListener(toggle)
         toggle.syncState()
