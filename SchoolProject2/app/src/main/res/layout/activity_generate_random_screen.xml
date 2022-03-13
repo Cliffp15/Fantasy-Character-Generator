@@ -13,7 +13,7 @@
         android:background="#450606">
 
         <TextView
-            android:id="@+id/textView36"
+            android:id="@+id/genAlignment"
             android:layout_width="215dp"
             android:layout_height="33dp"
             android:background="#00000000"
@@ -30,7 +30,7 @@
             app:layout_constraintVertical_bias="0.535" />
 
         <TextView
-            android:id="@+id/textView37"
+            android:id="@+id/genBond"
             android:layout_width="306dp"
             android:layout_height="38dp"
             android:background="#00000000"
@@ -47,7 +47,7 @@
             app:layout_constraintVertical_bias="0.611" />
 
         <TextView
-            android:id="@+id/textView38"
+            android:id="@+id/genFlaw"
             android:layout_width="301dp"
             android:layout_height="44dp"
             android:background="#00000000"
@@ -64,7 +64,7 @@
             app:layout_constraintVertical_bias="0.692" />
 
         <TextView
-            android:id="@+id/textView34"
+            android:id="@+id/genLifestyle"
             android:layout_width="265dp"
             android:layout_height="39dp"
             android:layout_marginEnd="92dp"
@@ -82,7 +82,7 @@
             app:layout_constraintVertical_bias="0.39" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/genRace"
             android:layout_width="169dp"
             android:layout_height="37dp"
             android:layout_marginEnd="124dp"
@@ -98,7 +98,7 @@
             app:layout_constraintVertical_bias="0.318" />
 
         <TextView
-            android:id="@+id/textView39"
+            android:id="@+id/genIdeals"
             android:layout_width="245dp"
             android:layout_height="43dp"
             android:background="#00000000"
@@ -115,7 +115,7 @@
             app:layout_constraintVertical_bias="0.77" />
 
         <TextView
-            android:id="@+id/textView40"
+            android:id="@+id/genPhysTrait"
             android:layout_width="211dp"
             android:layout_height="46dp"
             android:layout_marginEnd="52dp"
@@ -133,7 +133,7 @@
             app:layout_constraintVertical_bias="0.846" />
 
         <TextView
-            android:id="@+id/textView35"
+            android:id="@+id/genOccupation"
             android:layout_width="201dp"
             android:layout_height="42dp"
             android:background="#00000000"
@@ -180,10 +180,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintHorizontal_bias="0.16"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.976" />
+            app:layout_constraintVertical_bias="0.951" />
 
         <TextView
             android:id="@+id/textView7"
@@ -201,7 +201,7 @@
             app:layout_constraintVertical_bias="0.175" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/genName"
             android:layout_width="153dp"
             android:layout_height="35dp"
             android:layout_marginEnd="136dp"
@@ -370,7 +370,7 @@
             app:layout_constraintVertical_bias="0.316" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/genAge"
             android:layout_width="157dp"
             android:layout_height="37dp"
             android:layout_marginEnd="136dp"
@@ -384,6 +384,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.243" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.953" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
