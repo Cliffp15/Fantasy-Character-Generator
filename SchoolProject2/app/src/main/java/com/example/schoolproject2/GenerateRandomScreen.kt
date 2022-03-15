@@ -34,6 +34,7 @@ class GenerateRandomScreen : AppCompatActivity() {
     private lateinit var database: FirebaseDatabase
     private lateinit var dbReference: DatabaseReference
     private lateinit var dataSnapShot: Task<DataSnapshot>
+
     //region **Initialize Lists
     private val genderList: MutableList<String> = mutableListOf("Male", "Female", "Non-Binary")
     private val humanMaleList: MutableList<String> = mutableListOf() //list of names for Human men
@@ -350,7 +351,7 @@ class GenerateRandomScreen : AppCompatActivity() {
             val characterGender: String = genderList[randomGender]
             val randomRace = (0 until (raceList.size)).random() //choose random index for raceList
             val characterRace: String = raceList[randomRace]
-            textView10.text = ("$characterGender $characterRace")
+            genRace.text = ("$characterGender $characterRace")
 
 
             //region ** Character Name **
@@ -361,13 +362,13 @@ class GenerateRandomScreen : AppCompatActivity() {
                         (0 until (humanMaleList.size)).random() //choose random number for humanMale
                     val characterName: String =
                         humanMaleList[randomHumanMale] + " " + humanSurnameList[randomHumanSurname]
-                    textView9.text = characterName
+                    genName.text = characterName
                 } else if (characterGender != "Male") {
                     val randomHumanFemale =
                         (0 until (humanFemaleList.size)).random() //choose random number for humanFemale
                     val characterName: String =
                         humanFemaleList[randomHumanFemale] + " " + humanSurnameList[randomHumanSurname]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }
             } else if (characterRace == "Dwarf") {
                 val randomDwarfSurname = (0 until (dwarfSurnameList.size)).random()
@@ -376,13 +377,13 @@ class GenerateRandomScreen : AppCompatActivity() {
                         (0 until (dwarfMaleList.size)).random() //choose random number for dwarfMale
                     val characterName: String =
                         dwarfMaleList[randomDwarfMale] + " " + dwarfSurnameList[randomDwarfSurname]
-                    textView9.text = characterName
+                    genName.text = characterName
                 } else if (characterGender != "Male") {
                     val randomDwarfFemale =
                         (0 until (dwarfFemaleList.size)).random() //choose random number for dwarfFemale
                     val characterName: String =
                         dwarfFemaleList[randomDwarfFemale] + " " + dwarfSurnameList[randomDwarfSurname]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }
             } else if (characterRace == "Elf") {
                 val randomElfSurname = (0 until (elfSurnameList.size)).random()
@@ -391,13 +392,13 @@ class GenerateRandomScreen : AppCompatActivity() {
                         (0 until (elfMaleList.size)).random() //choose random number for elfMale
                     val characterName: String =
                         elfMaleList[randomElfMale] + " " + elfSurnameList[randomElfSurname]
-                    textView9.text = characterName
+                    genName.text = characterName
                 } else if (characterGender != "Male") {
                     val randomElfFemale =
                         (0 until (elfFemaleList.size)).random() //choose random number for elfFemale
                     val characterName: String =
                         elfFemaleList[randomElfFemale] + " " + elfSurnameList[randomElfSurname]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }
             } else if (characterRace == "Halfling") {
                 val randomHalflingSurname = (0 until (halflingSurnameList.size)).random()
@@ -406,73 +407,73 @@ class GenerateRandomScreen : AppCompatActivity() {
                         (0 until (halflingMaleList.size)).random() //choose random number for halflingMale
                     val characterName: String =
                         halflingMaleList[randomHalflingMale] + " " + halflingSurnameList[randomHalflingSurname]
-                    textView9.text = characterName
+                    genName.text = characterName
                 } else if (characterGender != "Male") {
                     val randomHalflingFemale =
                         (0 until (halflingFemaleList.size)).random() //choose random number for halflingFemale
                     val characterName: String =
                         halflingFemaleList[randomHalflingFemale] + " " + halflingSurnameList[randomHalflingSurname]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }
             } else if(characterRace == "Gnome"){
                 if(characterGender != "Female"){
                     val randomGnomeMale = (0 until (gnomeMaleList.size)).random()
                     val characterName: String = gnomeMaleList[randomGnomeMale]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }else if(characterGender != "Male"){
                     val randomGnomeFemale = (0 until (gnomeFemaleList.size)).random()
                     val characterName: String = gnomeFemaleList[randomGnomeFemale]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }
             } else if(characterRace == "Dragonborn"){
                 if(characterGender != "Female"){
                     val randomDragonbornMale = (0 until (dragonbornMaleList.size)).random()
                     val characterName: String = dragonbornMaleList[randomDragonbornMale]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }else if(characterGender != "Male"){
                     val randomDragonbornFemale = (0 until (dragonbornFemaleList.size)).random()
                     val characterName: String = dragonbornFemaleList[randomDragonbornFemale]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }
             }
             else if(characterRace == "Half Elf"){
                 if(characterGender != "Female"){
                     val randomHalfelfMale = (0 until (halfelfMaleList.size)).random()
                     val characterName: String = halfelfMaleList[randomHalfelfMale]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }else if(characterGender != "Male"){
                     val randomHalfelfFemale = (0 until (halfelfFemaleList.size)).random()
                     val characterName: String = halfelfFemaleList[randomHalfelfFemale]
-                    textView9.text = characterName
+                    genName.text = characterName
                 }
             }
 
             //endregion
 
             val randomAge = Random.nextInt(1..99) //choose random number for age
-            textView8.text = "$randomAge"
+            genAge.text = "$randomAge"
 
             val randomLifestyle = (0 until (lifestyleList.size)).random() //choose random number for lifestyle
-            textView34.text = lifestyleList[randomLifestyle]
+            genLifestyle.text = lifestyleList[randomLifestyle]
 
             val randomOccupation = (0 until (occupationList.size)).random() //choose random number for occupation
-            textView35.text = occupationList[randomOccupation]
+            genOccupation.text = occupationList[randomOccupation]
 
             val randomAlignment = (0 until (raceList.size)).random() //choose random number for alignment
-            textView36.text = alignmentList[randomAlignment]
+            genAlignment.text = alignmentList[randomAlignment]
 
             val randomBond = (0 until (bondList.size)).random() //choose random number for bond
-            textView37.text = bondList[randomBond]
+            genBond.text = bondList[randomBond]
 
             val randomFlaw = (0 until (flawList.size)).random() //choose random number for flaw
-            textView38.text = flawList[randomFlaw]
+            genFlaw.text = flawList[randomFlaw]
 
             val randomIdeals = (0 until (anyIdealList.size)).random() //choose random number for ideal
-            textView39.text = anyIdealList[randomIdeals]
+            genIdeals.text = anyIdealList[randomIdeals]
 
             val randomPhysicalTraits = (0 until (physicalTraitsList.size)).random() //choose random number for physical identifier
             val physicalInformation: String = physicalTraitsList[randomPhysicalTraits]
-            textView40.text = physicalInformation
+            genPhysTrait.text = physicalInformation
         })
 
 
@@ -514,7 +515,6 @@ class GenerateRandomScreen : AppCompatActivity() {
             e.printStackTrace()
         }
 
-        showToast("Saved To File!")
     }
 
 
@@ -542,10 +542,6 @@ class GenerateRandomScreen : AppCompatActivity() {
     }
 
 
-    private fun ranGen(){
-
-    }
-
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item)) {
@@ -556,10 +552,4 @@ class GenerateRandomScreen : AppCompatActivity() {
 }
 
 
-    fun Context.showToast(text:CharSequence, duration: Int = Toast.LENGTH_SHORT){
-        Toast.makeText(this,text,duration).show() //Added for file saving
-    }
 
-
-
-}
