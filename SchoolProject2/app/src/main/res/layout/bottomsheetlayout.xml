@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottomsheet_background"
+        android:orientation="vertical"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp">
+
+        <TextView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/uncial_antiqua"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Choose Your Bond"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:topLeftRadius="20dp"
+            android:topRightRadius="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/submissionview"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:context="com.example.ribbit.MainActivity$PlaceholderFragment">
+
+            <EditText
+                android:id="@+id/customtext"
+                android:layout_width="166dp"
+                android:layout_height="130dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="0dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginBottom="37dp"
+                android:background="@drawable/custombox"
+                android:fontFamily="@font/uncial_antiqua"
+                android:hint="Custom option"
+                android:textColorHint="@color/black"
+                android:visibility="invisible" />
+
+            <Button
+
+                android:id="@+id/submitbutton"
+                android:layout_width="168dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="89dp"
+                android:backgroundTint="#0B2F4C"
+                android:fontFamily="@font/uncial_antiqua"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
