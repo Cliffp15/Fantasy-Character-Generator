@@ -36,7 +36,7 @@ class GenerateRandomScreen : AppCompatActivity() {
     private lateinit var dataSnapShot: Task<DataSnapshot>
 
     //region **Initialize Lists
-    private val genderList: MutableList<String> = mutableListOf("Male", "Female", "Non-Binary")
+    private val genderList: MutableList<String> = mutableListOf("Male", "Female", "Non-Binary", "Male", "Female", "Male", "Female")
     private val humanMaleList: MutableList<String> = mutableListOf() //list of names for Human men
     private val humanFemaleList: MutableList<String> =
         mutableListOf() //list of names for Human women
@@ -70,7 +70,7 @@ class GenerateRandomScreen : AppCompatActivity() {
     private val raceList: MutableList<String> =
         mutableListOf("Human", "Elf", "Half Elf", "Gnome", "Dwarf", "Dragonborn", "Halfling")
     private val lifestyleList: MutableList<String> =
-        mutableListOf("Hardworking", "Lazy", "Wretched", "Wealthy", "Modest")
+        mutableListOf("Wretched", "Squalid", "Poor", "Modest", "Comfortable", "Wealthy", "Aristocratic")
     private val occupationList: MutableList<String> =
         mutableListOf() //list of occupations (NEED TO EXPAND)
     private val alignmentList: MutableList<String> = mutableListOf() //list of alignments
@@ -96,7 +96,9 @@ class GenerateRandomScreen : AppCompatActivity() {
         //think about getting the dataSnapshot into an array or list to speed production up =+= ADVICE FROM ELLIOT
         database = FirebaseDatabase.getInstance() //get instance of Firebase Database, store in "database"
         dbReference = database.getReference("/physicalDatabase") //refer to the Firebase Database, store in "dbReference"
+        //Thread.sleep(2_000)
         dataSnapShot = dbReference.get() //get "snapshot" task data from Firebase database
+        //Thread.sleep(2_000)
         while ((!dataSnapShot.isComplete)) { //necessary to load the database into the app, **CRASHES WITHOUT**
             Log.e("Task", "Waiting on Physical")
         }
@@ -345,7 +347,6 @@ class GenerateRandomScreen : AppCompatActivity() {
         val generateBtn = findViewById<Button>(R.id.button2)
         generateBtn.setOnClickListener(View.OnClickListener
         {
-            val characterName = ""
             val randomGender =
                 (0 until (genderList.size)).random() //choose random index for genderList
             val characterGender: String = genderList[randomGender]
@@ -354,23 +355,27 @@ class GenerateRandomScreen : AppCompatActivity() {
             genRace.text = ("$characterGender $characterRace")
 
 
-            //region ** Character Name **
-            if (characterRace == "Human") {
+
+            //region ** Characters **
+            if (characterRace == "Human") { //if the character is human :
                 val randomHumanSurname = (0 until (humanSurnameList.size)).random()
-                if (characterGender != "Female") {
+                if (characterGender != "Female") { //if the character is male, or non-binary:
                     val randomHumanMale =
                         (0 until (humanMaleList.size)).random() //choose random number for humanMale
                     val characterName: String =
-                        humanMaleList[randomHumanMale] + " " + humanSurnameList[randomHumanSurname]
+                        humanMaleList[randomHumanMale] + " " + humanSurnameList[randomHumanSurname] //first + last
                     genName.text = characterName
-                } else if (characterGender != "Male") {
+                } else if (characterGender != "Male") { //if the character is female, or non-binary
                     val randomHumanFemale =
                         (0 until (humanFemaleList.size)).random() //choose random number for humanFemale
                     val characterName: String =
                         humanFemaleList[randomHumanFemale] + " " + humanSurnameList[randomHumanSurname]
                     genName.text = characterName
                 }
-            } else if (characterRace == "Dwarf") {
+                val randomAge = Random.nextInt(15..99) //choose random number for age
+                genAge.text = "$randomAge"
+            } //END HUMAN CONDITIONAL
+            else if (characterRace == "Dwarf") {
                 val randomDwarfSurname = (0 until (dwarfSurnameList.size)).random()
                 if (characterGender != "Female") {
                     val randomDwarfMale =
@@ -385,7 +390,10 @@ class GenerateRandomScreen : AppCompatActivity() {
                         dwarfFemaleList[randomDwarfFemale] + " " + dwarfSurnameList[randomDwarfSurname]
                     genName.text = characterName
                 }
-            } else if (characterRace == "Elf") {
+                val randomAge = Random.nextInt(15..399) //choose random number for age
+                genAge.text = "$randomAge"
+            } //END DWARF CONDITIONAL
+            else if (characterRace == "Elf") {
                 val randomElfSurname = (0 until (elfSurnameList.size)).random()
                 if (characterGender != "Female") {
                     val randomElfMale =
@@ -400,7 +408,10 @@ class GenerateRandomScreen : AppCompatActivity() {
                         elfFemaleList[randomElfFemale] + " " + elfSurnameList[randomElfSurname]
                     genName.text = characterName
                 }
-            } else if (characterRace == "Halfling") {
+                val randomAge = Random.nextInt(15..699) //choose random number for age
+                genAge.text = "$randomAge"
+            } //END ELF CONDITIONAL
+            else if (characterRace == "Halfling") {
                 val randomHalflingSurname = (0 until (halflingSurnameList.size)).random()
                 if (characterGender != "Female") {
                     val randomHalflingMale =
@@ -415,7 +426,10 @@ class GenerateRandomScreen : AppCompatActivity() {
                         halflingFemaleList[randomHalflingFemale] + " " + halflingSurnameList[randomHalflingSurname]
                     genName.text = characterName
                 }
-            } else if(characterRace == "Gnome"){
+                val randomAge = Random.nextInt(15..139) //choose random number for age
+                genAge.text = "$randomAge"
+            } //END HALFLING CONDITIONAL
+            else if(characterRace == "Gnome"){
                 if(characterGender != "Female"){
                     val randomGnomeMale = (0 until (gnomeMaleList.size)).random()
                     val characterName: String = gnomeMaleList[randomGnomeMale]
@@ -425,7 +439,10 @@ class GenerateRandomScreen : AppCompatActivity() {
                     val characterName: String = gnomeFemaleList[randomGnomeFemale]
                     genName.text = characterName
                 }
-            } else if(characterRace == "Dragonborn"){
+                val randomAge = Random.nextInt(15..449) //choose random number for age
+                genAge.text = "$randomAge"
+            } //END GNOME CONDITIONAL
+            else if(characterRace == "Dragonborn"){
                 if(characterGender != "Female"){
                     val randomDragonbornMale = (0 until (dragonbornMaleList.size)).random()
                     val characterName: String = dragonbornMaleList[randomDragonbornMale]
@@ -435,7 +452,9 @@ class GenerateRandomScreen : AppCompatActivity() {
                     val characterName: String = dragonbornFemaleList[randomDragonbornFemale]
                     genName.text = characterName
                 }
-            }
+                val randomAge = Random.nextInt(15..65) //choose random number for age
+                genAge.text = "$randomAge"
+            } //END DRAGONBORN CONDITIONAL
             else if(characterRace == "Half Elf"){
                 if(characterGender != "Female"){
                     val randomHalfelfMale = (0 until (halfelfMaleList.size)).random()
@@ -446,21 +465,131 @@ class GenerateRandomScreen : AppCompatActivity() {
                     val characterName: String = halfelfFemaleList[randomHalfelfFemale]
                     genName.text = characterName
                 }
-            }
+                val randomAge = Random.nextInt(15..149) //choose random number for age
+                genAge.text = "$randomAge"
+            }//END HALF ELF CONDITIONAL
 
             //endregion
 
-            val randomAge = Random.nextInt(1..99) //choose random number for age
-            genAge.text = "$randomAge"
-
+            val randomAlignment = (0 until (raceList.size)).random() //choose random number for alignment
+            val generatedAlignment = alignmentList[randomAlignment]
+            genAlignment.text = generatedAlignment
+            //region **IDEALS**
+            val randomLawfulIdeal = (0 until (lawfulIdealList.size)).random()
+            val randomGoodIdeal = (0 until (goodIdealList.size)).random()
+            val randomNeutralIdeal = (0 until (neutralIdealList.size)).random()
+            val randomChaoticIdeal = (0 until (chaoticIdealList.size)).random()
+            val randomEvilIdeal = (0 until (evilIdealList.size)).random()
+            val randomAnyIdeal = (0 until (anyIdealList.size)).random()
+            val random0to2 = (0 .. 2).random()
+            if(generatedAlignment == "Lawful Good"){
+                if(random0to2 == 0) {
+                    val generatedIdeal = lawfulIdealList[randomLawfulIdeal]
+                    genIdeals.text = generatedIdeal
+                }else if(random0to2 == 1){
+                    val generatedIdeal = goodIdealList[randomGoodIdeal]
+                    genIdeals.text = generatedIdeal
+                }else {
+                    val generatedIdeal = anyIdealList[randomAnyIdeal]
+                    genIdeals.text = generatedIdeal
+                }
+            } else if(generatedAlignment == "Lawful Neutral"){
+                if(random0to2 == 0) {
+                    val generatedIdeal = lawfulIdealList[randomLawfulIdeal]
+                    genIdeals.text = generatedIdeal
+                }else if(random0to2 == 1){
+                    val generatedIdeal = neutralIdealList[randomNeutralIdeal]
+                    genIdeals.text = generatedIdeal
+                }else {
+                    val generatedIdeal = anyIdealList[randomAnyIdeal]
+                    genIdeals.text = generatedIdeal
+                }
+            }else if(generatedAlignment == "Lawful Evil"){
+                if(random0to2 == 0) {
+                    val generatedIdeal = lawfulIdealList[randomLawfulIdeal]
+                    genIdeals.text = generatedIdeal
+                }else if(random0to2 == 1){
+                    val generatedIdeal = evilIdealList[randomEvilIdeal]
+                    genIdeals.text = generatedIdeal
+                }else {
+                    val generatedIdeal = anyIdealList[randomAnyIdeal]
+                    genIdeals.text = generatedIdeal
+                }
+            }else if(generatedAlignment == "Neutral Good"){
+                if(random0to2 == 0) {
+                    val generatedIdeal = neutralIdealList[randomNeutralIdeal]
+                    genIdeals.text = generatedIdeal
+                }else if(random0to2 == 1){
+                    val generatedIdeal = goodIdealList[randomGoodIdeal]
+                    genIdeals.text = generatedIdeal
+                }else {
+                    val generatedIdeal = anyIdealList[randomAnyIdeal]
+                    genIdeals.text = generatedIdeal
+                }
+            }else if(generatedAlignment == "Neutral"){
+                if(random0to2 == 0) {
+                    val generatedIdeal = neutralIdealList[randomNeutralIdeal]
+                    genIdeals.text = generatedIdeal
+                }else if(random0to2 == 1){
+                    val generatedIdeal = neutralIdealList[randomNeutralIdeal]
+                    genIdeals.text = generatedIdeal
+                }else {
+                    val generatedIdeal = anyIdealList[randomAnyIdeal]
+                    genIdeals.text = generatedIdeal
+                }
+            }else if(generatedAlignment == "Neutral Evil") {
+                if (random0to2 == 0) {
+                    val generatedIdeal = neutralIdealList[randomNeutralIdeal]
+                    genIdeals.text = generatedIdeal
+                } else if (random0to2 == 1) {
+                    val generatedIdeal = evilIdealList[randomEvilIdeal]
+                    genIdeals.text = generatedIdeal
+                } else {
+                    val generatedIdeal = anyIdealList[randomAnyIdeal]
+                    genIdeals.text = generatedIdeal
+                }
+            }else if(generatedAlignment == "Chaotic Good") {
+                if (random0to2 == 0) {
+                    val generatedIdeal = chaoticIdealList[randomChaoticIdeal]
+                    genIdeals.text = generatedIdeal
+                } else if (random0to2 == 1) {
+                    val generatedIdeal = goodIdealList[randomGoodIdeal]
+                    genIdeals.text = generatedIdeal
+                } else {
+                    val generatedIdeal = anyIdealList[randomAnyIdeal]
+                    genIdeals.text = generatedIdeal
+                }
+            }else if(generatedAlignment == "Chaotic Neutral") {
+                if (random0to2 == 0) {
+                    val generatedIdeal = chaoticIdealList[randomChaoticIdeal]
+                    genIdeals.text = generatedIdeal
+                } else if (random0to2 == 1) {
+                    val generatedIdeal = neutralIdealList[randomNeutralIdeal]
+                    genIdeals.text = generatedIdeal
+                } else {
+                    val generatedIdeal = anyIdealList[randomAnyIdeal]
+                    genIdeals.text = generatedIdeal
+                }
+            }else {
+                if (random0to2 == 0) {
+                    val generatedIdeal = chaoticIdealList[randomChaoticIdeal]
+                    genIdeals.text = generatedIdeal
+                } else if (random0to2 == 1) {
+                    val generatedIdeal = evilIdealList[randomEvilIdeal]
+                    genIdeals.text = generatedIdeal
+                } else {
+                    val generatedIdeal = anyIdealList[randomAnyIdeal]
+                    genIdeals.text = generatedIdeal
+                }
+            }
+            //endregion
             val randomLifestyle = (0 until (lifestyleList.size)).random() //choose random number for lifestyle
             genLifestyle.text = lifestyleList[randomLifestyle]
 
             val randomOccupation = (0 until (occupationList.size)).random() //choose random number for occupation
             genOccupation.text = occupationList[randomOccupation]
 
-            val randomAlignment = (0 until (raceList.size)).random() //choose random number for alignment
-            genAlignment.text = alignmentList[randomAlignment]
+
 
             val randomBond = (0 until (bondList.size)).random() //choose random number for bond
             genBond.text = bondList[randomBond]
@@ -468,8 +597,6 @@ class GenerateRandomScreen : AppCompatActivity() {
             val randomFlaw = (0 until (flawList.size)).random() //choose random number for flaw
             genFlaw.text = flawList[randomFlaw]
 
-            val randomIdeals = (0 until (anyIdealList.size)).random() //choose random number for ideal
-            genIdeals.text = anyIdealList[randomIdeals]
 
             val randomPhysicalTraits = (0 until (physicalTraitsList.size)).random() //choose random number for physical identifier
             val physicalInformation: String = physicalTraitsList[randomPhysicalTraits]
