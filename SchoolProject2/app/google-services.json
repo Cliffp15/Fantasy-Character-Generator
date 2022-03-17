@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "675744419632",
+    "firebase_url": "https://mm-database-npcg-default-rtdb.firebaseio.com",
+    "project_id": "mm-database-npcg",
+    "storage_bucket": "mm-database-npcg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675744419632:android:3f6e897685a5dca975c2f5",
+        "android_client_info": {
+          "package_name": "com.example.schoolproject2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675744419632-42mep2pt1cvg79flk9ft6j6tpnjf65so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzCKwBfmpxGA48wTcFIKwBSv3U4sNluxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675744419632-42mep2pt1cvg79flk9ft6j6tpnjf65so.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

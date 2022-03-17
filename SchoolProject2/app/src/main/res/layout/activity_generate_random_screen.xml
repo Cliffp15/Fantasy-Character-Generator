@@ -14,80 +14,79 @@
 
         <TextView
             android:id="@+id/genAlignment"
-            android:layout_width="215dp"
-            android:layout_height="33dp"
+            android:layout_width="259dp"
+            android:layout_height="37dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.801"
+            app:layout_constraintHorizontal_bias="0.894"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.535" />
+            app:layout_constraintVertical_bias="0.438" />
 
         <TextView
             android:id="@+id/genBond"
-            android:layout_width="306dp"
-            android:layout_height="38dp"
+            android:layout_width="316dp"
+            android:layout_height="60dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintHorizontal_bias="0.915"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.611" />
+            app:layout_constraintVertical_bias="0.524" />
 
         <TextView
             android:id="@+id/genFlaw"
-            android:layout_width="301dp"
-            android:layout_height="44dp"
+            android:layout_width="321dp"
+            android:layout_height="51dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintHorizontal_bias="0.922"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.692" />
+            app:layout_constraintVertical_bias="0.627" />
 
         <TextView
             android:id="@+id/genLifestyle"
-            android:layout_width="265dp"
-            android:layout_height="39dp"
-            android:layout_marginEnd="92dp"
+            android:layout_width="284dp"
+            android:layout_height="35dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toEndOf="@+id/textView27"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.39" />
+            app:layout_constraintVertical_bias="0.294" />
 
         <TextView
             android:id="@+id/genRace"
-            android:layout_width="169dp"
+            android:layout_width="320dp"
             android:layout_height="37dp"
-            android:layout_marginEnd="124dp"
+            android:layout_marginEnd="16dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="22sp"
@@ -95,32 +94,32 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.318" />
+            app:layout_constraintVertical_bias="0.226" />
 
         <TextView
             android:id="@+id/genIdeals"
-            android:layout_width="245dp"
-            android:layout_height="43dp"
+            android:layout_width="316dp"
+            android:layout_height="64dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintHorizontal_bias="0.957"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.77" />
+            app:layout_constraintVertical_bias="0.746" />
 
         <TextView
             android:id="@+id/genPhysTrait"
-            android:layout_width="211dp"
-            android:layout_height="46dp"
+            android:layout_width="237dp"
+            android:layout_height="51dp"
             android:layout_marginEnd="52dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="16sp"
@@ -130,24 +129,24 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView33"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.846" />
+            app:layout_constraintVertical_bias="0.857" />
 
         <TextView
             android:id="@+id/genOccupation"
-            android:layout_width="201dp"
-            android:layout_height="42dp"
+            android:layout_width="260dp"
+            android:layout_height="38dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.814"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.468" />
+            app:layout_constraintVertical_bias="0.376" />
 
         <TextView
             android:id="@+id/textView"
@@ -159,11 +158,11 @@
             android:textColor="@color/white"
             android:textSize="48sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintHorizontal_bias="0.652"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.051" />
+            app:layout_constraintVertical_bias="0.002" />
 
         <Button
             android:id="@+id/button2"
@@ -189,7 +188,7 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="4dp"
             android:fontFamily="@font/unifrakturmaguntia"
             android:text="Name : "
             android:textAlignment="textStart"
@@ -198,15 +197,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.175" />
+            app:layout_constraintVertical_bias="0.095" />
 
         <TextView
             android:id="@+id/genName"
-            android:layout_width="153dp"
-            android:layout_height="35dp"
-            android:layout_marginEnd="136dp"
+            android:layout_width="323dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="4dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -214,12 +213,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.175" />
+            app:layout_constraintVertical_bias="0.096" />
 
         <TextView
             android:id="@+id/textView27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="122dp"
+            android:layout_height="30dp"
             android:fontFamily="@font/uncial_antiqua"
             android:text="Life Style :"
             android:textAlignment="textStart"
@@ -228,10 +227,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintHorizontal_bias="0.013"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.384" />
+            app:layout_constraintVertical_bias="0.292" />
 
         <TextView
             android:id="@+id/textView30"
@@ -245,10 +244,9 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintHorizontal_bias="0.017"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.602" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView31"
@@ -262,10 +260,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintHorizontal_bias="0.017"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.68" />
+            app:layout_constraintVertical_bias="0.606" />
 
         <TextView
             android:id="@+id/textView32"
@@ -279,10 +277,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintHorizontal_bias="0.018"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.752" />
+            app:layout_constraintVertical_bias="0.707" />
 
         <TextView
             android:id="@+id/textView33"
@@ -296,15 +294,15 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintHorizontal_bias="0.012"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.823" />
+            app:layout_constraintVertical_bias="0.83" />
 
         <TextView
             android:id="@+id/textView28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="144dp"
+            android:layout_height="27dp"
             android:fontFamily="@font/uncial_antiqua"
             android:text="Occupation :"
             android:textAlignment="textStart"
@@ -313,10 +311,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintHorizontal_bias="0.022"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.458" />
+            app:layout_constraintVertical_bias="0.37" />
 
         <TextView
             android:id="@+id/textView29"
@@ -330,10 +328,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintHorizontal_bias="0.021"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.531" />
+            app:layout_constraintVertical_bias="0.431" />
 
         <TextView
             android:id="@+id/textView17"
@@ -347,10 +345,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintHorizontal_bias="0.011"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.246" />
+            app:layout_constraintVertical_bias="0.162" />
 
         <TextView
             android:id="@+id/textView12"
@@ -364,18 +362,18 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintHorizontal_bias="0.011"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.316" />
+            app:layout_constraintVertical_bias="0.224" />
 
         <TextView
             android:id="@+id/genAge"
-            android:layout_width="157dp"
-            android:layout_height="37dp"
-            android:layout_marginEnd="136dp"
+            android:layout_width="319dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="12dp"
             android:background="#00000000"
-            android:fontFamily="@font/uncial_antiqua"
+            android:fontFamily="@font/unica_one"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -383,7 +381,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.243" />
+            app:layout_constraintVertical_bias="0.163" />
 
         <Button
             android:id="@+id/saveBtn"
